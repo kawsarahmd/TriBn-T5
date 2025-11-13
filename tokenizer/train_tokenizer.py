@@ -7,7 +7,7 @@ vocab_size = 32_000
 input_sentence_size = None
 
 # Initialize a dataset
-dataset = datasets.load_dataset("oscar", name="unshuffled_deduplicated_no", split="train")
+dataset = datasets.load_dataset("allenai/c4", name="bn", split="train")
 
 tokenizer = SentencePieceUnigramTokenizer(unk_token="<unk>", eos_token="</s>", pad_token="<pad>")
 
